@@ -53,7 +53,7 @@ int main(void) {
 		printf("estado civil (S para soltero-C para casado o V viudo)");
 		fflush(stdin);
 		scanf("%c",&estadoCivil);
-		estadoCivil = tolower();
+		estadoCivil = tolower(estadoCivil);
 		while(estadoCivil!='s' && estadoCivil!='c' && estadoCivil!='v'){
 			printf("Re ingrese estado civil (S para soltero-C para casado o V viudo)");
 			fflush(stdin);
